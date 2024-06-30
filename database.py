@@ -11,11 +11,9 @@ password = 'Shiva12*'
 host = 'localhost'
 database = 'demo'
 
-
 connection_string = f'mysql+pymysql://{user}:{password}@{host}/{database}'
 engine = create_engine(connection_string)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
 
 def get_db():
     db = SessionLocal()
