@@ -1,6 +1,7 @@
+
 # Protect blog route behind authentication
 
-import JWTtoken as JWTtoken 
+import JWTtoken 
 from fastapi import HTTPException, Depends, status
 from fastapi.security import OAuth2PasswordBearer
 
