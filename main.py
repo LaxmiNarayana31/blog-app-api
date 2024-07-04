@@ -1,15 +1,14 @@
-from fastapi import FastAPI, Depends, status, HTTPException
-from database import engine, SessionLocal, get_db
-import schemas as schemas
-from models import User,Blog
+from fastapi import FastAPI
+from database import engine
 from database import Base
-from sqlalchemy.orm import Session
-from passlib.context import CryptContext
-from typing import List
 from routers import blog, user, authentication
+
+from fastapi_pagination import add_pagination
 
 
 app = FastAPI()
+add_pagination(app)
+
 
 Base.metadata.create_all(bind=engine)
 
