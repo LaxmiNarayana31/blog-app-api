@@ -1,17 +1,14 @@
 # Pydantic models
+
 from pydantic import BaseModel
-from typing import Optional, List
-
-
-class Login(BaseModel):
-    email: str
-    password: str
+from typing import Optional
 
 
 class Blog(BaseModel):
     title: str
     body: str
-   
+    user_id: int
+
 
 class BlogCreate(BaseModel):
     pass
@@ -20,7 +17,6 @@ class BlogCreate(BaseModel):
 class BlogUpdate(BaseModel):
     title: Optional[str] = None
     body: Optional[str] = None
-
 
 
 # User create
@@ -33,26 +29,23 @@ class User(BaseModel):
 class ShowUser(BaseModel):
     name: str
     email: str
-    # blogs : List[Blog] =[]
 
-    class Config():
+    class Config:
         from_attributes = True
-
 
 
 class ShowBlog(BaseModel):
     title: str
     body: str
-    # creator: ShowUser
-    
-    class Config():
+    creator: ShowUser
+
+    class Config:
         from_attributes = True
 
 
 class Login(BaseModel):
     username: str
     password: str
-
 
 
 class Token(BaseModel):
