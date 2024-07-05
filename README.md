@@ -2,6 +2,7 @@
 
 This is a FastAPI application designed for blog management. It includes features for user authentication, blog post creation, and data validation.
 
+
 ## Features and Functionalities
 
 - **User Authentication**: The application uses JWT tokens and OAuth2 authentication to ensure secure access. Users can register, log in, and manage their accounts with peace of mind, knowing their data is protected.
