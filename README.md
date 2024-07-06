@@ -20,15 +20,7 @@ This is a FastAPI application designed for blog management. It includes features
 
 ## Directory Structure
 
-- **routers/**: This directory contains router files (`authentication.py`, `user.py`, `blog.py`) that define endpoints for authentication, user management, and blog operations.
-- **JWTtoken.py**: This file implements functions for JWT token management, supporting authentication and authorization mechanisms.
-- **database.py**: This file configures database connections using SQLAlchemy, facilitating interaction with the underlying database.
-- **oauth2.py**: This file contains utility functions for OAuth2 authentication, enhancing the security and usability of the application.
-- **models/**: This directory contains Python files defining data models for blog posts (`blog_model.py`) and user management (`user_models.py`).
-- **hashing.py**: This file provides functions for password hashing to ensure secure storage and validation of user passwords.
-- **main.py**: This file serves as the main entry point for the FastAPI application, initializing and running the API server.
-- **repository/**: This directory includes repository files (`blogfile.py`, `userfile.py`) responsible for database operations related to blogs and users.
-- **schema.py**: This file defines Pydantic schemas used for validating request and response payloads, ensuring data consistency and integrity.
+![Alt text](screenshots/Directory_structure.png)
 
 ## Usage
 
@@ -39,7 +31,7 @@ To run the FastAPI application:
 3. Execute `uvicorn main:app --reload` from the project directory to start the FastAPI server with automatic reloading on code changes.
 
 #
-![Alt text](screenshot.png)
+![Alt text](screenshots/blogapp.png)
 #
 
 Please note that this application is under development and may undergo significant changes.
