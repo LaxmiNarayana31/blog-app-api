@@ -18,10 +18,6 @@ This is a FastAPI application designed for blog management. It includes features
 - **Database Interactions**: The application uses SQLAlchemy to interact with the database. This provides a high level of abstraction, making it easier to perform complex database operations.
 
 
-## Directory Structure
-
-![Alt text](screenshots/Directory_structure.png)
-
 ## Usage
 
 To run the FastAPI application:
